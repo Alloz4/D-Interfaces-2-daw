@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Louis';
+  src: url(/fonts/Louis.ttf);
+}
+
+.titulo {
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  overflow: auto;
+}
+
+#foto1 {
+  width: 10em;
+  height: 10em;
+}
+
+#letrado {
+  margin: 2em 0em 2em 0em;
+}
+
+.indice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.cuerpo {
+  display: flex;
+  border: 1px solid black;
+  gap: 10rem;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+#foto2 {
+  overflow: auto;
+}
+
+footer {
+  font-size: 0.5rem;
+  border: 1px solid black;
+  background-color: hsla(216, 100%, 50%, 1);
+  text-align: center;
+  margin: 0em;
+}
+
+body {
+  font-family: 'Louis';
+}
