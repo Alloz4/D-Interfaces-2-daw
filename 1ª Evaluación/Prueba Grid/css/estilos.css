@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 4rem;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.grid-contenedor {
+    display: grid;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 2px black;
+    grid-template-columns: minmax(500px, 2fr) 1fr 1fr;
+    grid-template-rows: [first-row] 1fr [second-row] 1fr [third-row] 1fr;
+    grid-template-areas: "header header header"
+        "main main aside"
+        "footer footer";
+
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: brown;
+    text-align: center;
+}
