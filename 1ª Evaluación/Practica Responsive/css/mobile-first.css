@@ -10,7 +10,7 @@ h5 {
     gap: 0.5rem;
     width: 100%;
     height: auto;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .caja1 {
@@ -33,7 +33,7 @@ h5 {
 }
 
 .caja5 {
-    background-color: hsl(0, 0%, 71%);
+    background-color: hsl(330, 55%, 80%);
 }
 
 .container>div {
@@ -46,11 +46,11 @@ h5 {
     .container {
         flex-direction: row;
         flex-wrap: wrap;
+        font-size: 1.5rem;
     }
 
     .container>div {
         flex: 1 1 30%;
-        font-size: 1rem;
     }
 
     .caja3 {
@@ -69,11 +69,11 @@ h5 {
     .container {
         flex-direction: row;
         flex-wrap: wrap;
+        font-size: 1rem;
     }
 
     .container>div {
         flex: 1 1 25%;
-        font-size: 0.8rem;
     }
 
     .caja3 {
@@ -97,10 +97,7 @@ h5 {
     .container {
         flex-direction: row;
         flex-wrap: nowrap;
-    }
-
-    .container>div {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     .caja2 {
@@ -121,6 +118,7 @@ h5 {
         background-color: hsl(0, 0%, 100%);
         color: hsl(0, 0%, 0%);
         flex: 1 1 100%;
+        font-size: 2rem;
     }
 
 }

@@ -36,6 +36,7 @@ h5 {
     background-color: hsl(0, 0%, 100%);
     color: hsl(0, 0%, 0%);
     flex: 1 1 100%;
+    font-size: 2rem;
 }
 
 .container>div {
@@ -53,6 +54,10 @@ h5 {
     .container>div {
         flex: 1 1 25%;
         font-size: 1rem;
+    }
+
+    .caja2 {
+        color: hsl(0, 0%, 100%);
     }
 
     .caja3 {
@@ -83,8 +88,18 @@ h5 {
         font-size: 1.5rem;
     }
 
+    .caja2 {
+        color: hsl(0, 0%, 100%);
+    }
+
     .caja3 {
         color: hsl(0, 0%, 0%);
+    }
+
+    .caja4 {
+        background-color: hsl(196, 100%, 50%);
+        color: hsl(0, 0%, 100%);
+        outline: none;
     }
 
     .caja5 {
@@ -124,8 +139,8 @@ h5 {
     }
 
     .caja5 {
-        background-color: hsl(0, 0%, 71%);
-        color: hsl(0, 0%, 100%);
+        background-color: hsl(330, 55%, 80%);
+        color: hsl(0, 0%, 0%);
         outline: none;
     }
 }
