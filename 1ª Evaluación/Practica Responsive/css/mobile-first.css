@@ -1,0 +1,126 @@
+h1,
+h5 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+}
+
+.caja1 {
+    background-color: hsl(39, 100%, 50%);
+}
+
+.caja2 {
+    background-color: hsl(0, 0%, 50%);
+    color: hsl(0, 0%, 100%);
+}
+
+.caja3 {
+    background-color: hsl(120, 100%, 25%);
+    color: hsl(0, 0%, 100%);
+}
+
+.caja4 {
+    background-color: hsl(196, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+}
+
+.caja5 {
+    background-color: hsl(0, 0%, 71%);
+}
+
+.container>div {
+    font-family: sans-serif;
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container>div {
+        flex: 1 1 30%;
+        font-size: 1rem;
+    }
+
+    .caja3 {
+        color: hsl(0, 0%, 0%);
+    }
+
+    .caja5 {
+        outline: 3px solid hsl(330, 55%, 80%);
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(300, 55%, 80%);
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container>div {
+        flex: 1 1 25%;
+        font-size: 0.8rem;
+    }
+
+    .caja3 {
+        color: hsl(0, 0%, 0%);
+    }
+
+    .caja4 {
+        outline: 3px solid hsl(196, 100%, 50%);
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(196, 100%, 50%);
+    }
+
+    .caja5 {
+        outline: 3px solid hsl(330, 55%, 80%);
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(300, 55%, 80%);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .container>div {
+        font-size: 0.6rem;
+    }
+
+    .caja2 {
+        color: hsl(0, 0%, 0%);
+    }
+
+    .caja3 {
+        color: hsl(0, 0%, 0%);
+    }
+
+    .caja4 {
+        background-color: hsl(196, 100%, 50%);
+        color: hsl(0, 0%, 0%);
+    }
+
+    .caja5 {
+        outline: 3px solid hsl(330, 55%, 80%);
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(0, 0%, 0%);
+        flex: 1 1 100%;
+    }
+
+}
