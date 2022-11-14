@@ -1,0 +1,29 @@
+main {
+    gap: 10rem;
+}
+
+#particles-js {
+    background-image: url("../images/fondo-imagen.jpg");
+    z-index: 1;
+}
+
+.foto-carnet {
+    box-sizing: border-box;
+    width: 263px;
+    height: 282px;
+    border: 5px solid rgba(148, 89, 1, 0.25);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 111.5px;
+}
+
+.titulo {
+    font-family: 'Quicksand';
+    color: white;
+    font-size: 3.5rem;
+    padding: 1rem;
+    text-shadow: 0px 4px 4px #000000;
+}
+
+.titulo p {
+    margin: 0rem;
+}

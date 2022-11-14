@@ -1,0 +1,237 @@
+/*  Fuentes importadas  */
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Quicksand Bold';
+    src: url('../fonts/Quicksand-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Chivo light';
+    src: url('../fonts/Chivo-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Chivo light';
+    src: url('../fonts/Chivo-Italic.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/fondo-imagen.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    min-height: 100vh;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    grid-area: header;
+    max-height: 8rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 98%;
+}
+
+.menu-fixed {
+    width: 98%;
+    overflow: auto;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("../images/fondo-imagen.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.logotipo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    padding-right: 1rem;
+}
+
+.linea-vertical {
+    height: 50px;
+    width: .2rem;
+    border-width: 0;
+    color: hsl(36, 99%, 29%);
+    background-color: hsl(36, 99%, 29%);
+    margin: 1rem;
+}
+
+.nombre {
+    font-family: 'Quicksand';
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    text-shadow: 1px 1px 0px hsl(36, 99%, 29%);
+
+}
+
+.navegador {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: .4rem;
+    font-family: 'Quicksand';
+}
+
+.nav-link:hover,
+.nav-active {
+    color: hsl(36, 99%, 29%);
+    transition: 0.4s ease-in-out;
+    font-family: 'Quicksand Bold';
+}
+
+.boton-navegador {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    grid-area: main;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    grid-area: footer;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsla(36, 99%, 29%, 0.25);
+    margin-top: 2rem;
+}
+
+.contacto {
+    padding: .3rem;
+}
+
+.contacto p {
+    color: white;
+    font-size: 12px;
+    margin: 0.5rem;
+    font-family: 'QuickSand';
+}
+
+.buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-right: 1.5rem;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    transition: all .4s ease-in-out;
+    text-shadow: 5px 5px 5px hsl(0, 0%, 0%, 1);
+}
+
+.buttons a:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1080px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        margin: 0;
+        background-image: url("../images/fondo-imagen.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: fixed;
+        top: 110px;
+        width: 100%;
+        height: 100%;
+        right: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-link:hover {
+        color: hsl(36, 99%, 29%);
+        transition: 0.4s ease-in-out;
+    }
+
+    .boton-navegador {
+        display: block;
+    }
+
+    .boton-navegador:hover {
+        color: hsl(36, 99%, 29%);
+        transform: scale(1.2);
+        transition: color 0.4s;
+    }
+
+    .nav-menu_visible {
+        right: 0;
+        position: fixed;
+        padding: 1.5rem;
+        overflow: hidden;
+        z-index: 1;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}

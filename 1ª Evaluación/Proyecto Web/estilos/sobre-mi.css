@@ -1,0 +1,17 @@
+.parrafo {
+    color: white;
+    font-family: 'Quicksand';
+    margin: 0 20rem 1rem 20rem;
+    text-align: justify;
+
+}
+
+@media (max-width: 1295px) {
+    .parrafo {
+        margin: 0 1rem 1rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
