@@ -2,11 +2,6 @@ main {
     gap: 10rem;
 }
 
-#particles-js {
-    background-image: url("../images/fondo-imagen.jpg");
-    z-index: 1;
-}
-
 .foto-carnet {
     box-sizing: border-box;
     width: 263px;
