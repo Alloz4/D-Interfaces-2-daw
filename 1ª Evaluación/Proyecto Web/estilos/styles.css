@@ -82,6 +82,11 @@ header {
     padding-right: 1rem;
 }
 
+.logo:hover {
+    transform: scale(1.1) rotate(360deg);
+    transition: 2s ease-in-out;
+}
+
 .linea-vertical {
     height: 50px;
     width: .2rem;
@@ -119,10 +124,15 @@ header {
     font-family: 'Quicksand';
 }
 
-.nav-link:hover,
+.nav-link:hover {
+    color: hsl(36, 99%, 29%);
+    transform: scale(1.9);
+    transition: .5s ease;
+    font-family: 'Quicksand Bold';
+}
+
 .nav-active {
     color: hsl(36, 99%, 29%);
-    transition: 0.4s ease-in-out;
     font-family: 'Quicksand Bold';
 }
 

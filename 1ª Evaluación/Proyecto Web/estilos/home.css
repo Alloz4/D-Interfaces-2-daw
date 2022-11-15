@@ -11,14 +11,72 @@ main {
     border-radius: 111.5px;
 }
 
+.foto-carnet:hover {
+    transform: scale(1.2);
+    transition: all 1s ease-in-out;
+}
+
 .titulo {
-    font-family: 'Quicksand';
+    /* font-family: 'Quicksand';
     color: white;
     font-size: 3.5rem;
     padding: 1rem;
-    text-shadow: 0px 4px 4px #000000;
+    text-shadow: 0px 4px 4px #000000; */
+    color: hsl(0, 0%, 98%);
+    font-size: 4rem;
+    font-family: 'Quicksand';
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 hsl(36, 99%, 29%), 0 4px 0 hsl(36, 99%, 29%), 0 5px 0 hsl(36, 99%, 29%), 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
 }
+
 
 .titulo p {
     margin: 0rem;
+    animation: titulo 2s;
+}
+
+
+@keyframes titulo {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateY(-45px);
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateY(-24px);
+    }
+
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateY(-12px);
+    }
+
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateY(-6px);
+    }
+
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateY(-4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        animation-timing-function: ease-out;
+        transform: translateY(0px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
