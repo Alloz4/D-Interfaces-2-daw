@@ -9,15 +9,7 @@
     src: url('../fonts/Quicksand-Bold.ttf');
 }
 
-@font-face {
-    font-family: 'Chivo light';
-    src: url('../fonts/Chivo-Light.ttf');
-}
-
-@font-face {
-    font-family: 'Chivo Italic';
-    src: url('../fonts/Chivo-Italic.ttf');
-}
+/* ESTILOS COMUNES A TODA LA WEB */
 
 body {
     margin: 0;
@@ -230,6 +222,7 @@ footer {
     text-shadow: 5px 5px 5px hsl(0, 0%, 0%, 1);
 }
 
+/* MEDIA QUERIES */
 
 @media (max-width: 1100px) {
     .nav-menu {
