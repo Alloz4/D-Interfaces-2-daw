@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../estilos/styles.css">
     <link rel="stylesheet" href="../estilos/mi-portafolio.css">
     <script src="https://kit.fontawesome.com/0dd31d40e8.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script defer src="../js/menu.js"></script>
     <link rel="shortcut icon" href="../images/favicono.png" type="image/x-icon">
     <title>Marcos Alloza</title>
@@ -15,7 +16,7 @@
 
 <body>
     <div class="container">
-        <header class="menu menu-fixed">
+        <header class="menu">
             <div class="logotipo">
                 <a href="../index.html"><img src="../images/LOGO.png" alt="Logo de Marcos Alloza" class="logo"></a>
                 <hr class="linea-vertical">
@@ -40,12 +41,48 @@
             </div>
         </header>
         <main>
-
+            <div class="portfolio">
+                <div class="portfolio-up">
+                    <div class="texto">
+                        <p>Aquí podrás ver una selección de mis trabajos realizados en los ultimos años.</p>
+                    </div>
+                </div>
+                <div class="portfolio-down">
+                    <div class="trabajo">
+                        <img src="../images/crudpng.png" alt="Imagen de CRUD">
+                        <div class="texto-trabajo">
+                            <h4>Crud de usuarios</h4>
+                            <p>Práctica de un CRUD de usuarios en PHP.</p>
+                        </div>
+                    </div>
+                    <div class="trabajo">
+                        <img src="../images/juego-ppt.png" alt="Imagen del juego Piedra, Papel y Tijera">
+                        <div class="texto-trabajo">
+                            <h4>Juego Piedra, Papel y tijera</h4>
+                            <p>Juego de piedra, papel y tijera realizado en PHP.</p>
+                        </div>
+                    </div>
+                    <div class="trabajo">
+                        <img src="../images/flexbox.png" alt="Imagen de una pagina realizada con flexbox">
+                        <div class="texto-trabajo">
+                            <h4>Práctica FlexBox</h4>
+                            <p>Pequeña práctica realizada con FlexBox</p>
+                        </div>
+                    </div>
+                    <div class="trabajo">
+                        <img src="../images/responsive.png" alt="Imagen de práctica responsive">
+                        <div class="texto-trabajo">
+                            <h4>Práctica Responsive</h4>
+                            <p>Web responsive, cuando cambias de dispositivo se adapta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
             <div class="contacto">
                 <p>© MARCOS ALLOZA GARCIA</p>
-                <p>marcos.alloza4@gmail.com</p>
+                <p><a href="mailto:marcos.alloza4@gmail.com">marcos.alloza4@gmail.com</a></p>
             </div>
             <section class="buttons">
                 <a href="https://github.com/Alloz4" class="fa-brands fa-github"></a>

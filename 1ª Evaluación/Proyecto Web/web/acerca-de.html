@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../estilos/styles.css">
     <link rel="stylesheet" href="../estilos/acerca-de.css">
     <script src="https://kit.fontawesome.com/0dd31d40e8.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script defer src="../js/menu.js"></script>
     <link rel="shortcut icon" href="../images/favicono.png" type="image/x-icon">
     <title>Marcos Alloza</title>
@@ -15,7 +16,7 @@
 
 <body>
     <div class="container">
-        <header class="menu menu-fixed">
+        <header class="menu">
             <div class="logotipo">
                 <a href="../index.html"><img src="../images/LOGO.png" alt="Logo de Marcos Alloza" class="logo"></a>
                 <hr class="linea-vertical">
@@ -40,12 +41,82 @@
             </div>
         </header>
         <main>
+            <div class="acercade">
+                <div class="texto">
 
+                    <p>Este sitio web fue creado con el fin de mostrar mis conocimientos en el desarrollo web, y así
+                        poder
+                        obtener un trabajo en el área programación o diseño.</p>
+                    <p>Para la realización de este proyecto, se partió del siguiente prototipo de fidelidad media
+                        diseñado
+                        con la herramienta Figma, mostrado
+                        a continuación:
+                    </p>
+                </div>
+                <iframe src="../items/Prototipo de proyecto.pdf" frameborder="10"></iframe>
+                <div class="texto">
+                    <p>
+                        El sitio web fue desarrollado con HTML5, CSS3 y JavaScript, también se utilizó una librería de
+                        JavaScript llamada JQuery, la cual nos permite realizar animaciones y efectos de manera más
+                        sencilla y rápida. Para el diseño del sitio web se utilizó la metodología de diseño llamada
+                        Desktop First, la cual consiste en diseñar el sitio web para dispositivos de
+                        escritorio y
+                        luego adaptarlo a dispositivos móviles.
+                    </p>
+                    <p>En cuanto a la estructura del proyecto prevalecen:</p>
+                    <ul>
+                        <li>Grid -> para la estructura principal</li>
+                        <li>Flex -> para complementar a la estructura principal</li>
+                        <li>@Media -> para adaptar el sitio web a todo tipo de dispositivos</li>
+                    </ul>
+                    <p>Se ha hecho uso de etiquetas estructurales como: </p>
+                    <ul>
+                        <li>header</li>
+                        <li>nav</li>
+                        <li>main</li>
+                        <li>footer</li>
+                    </ul>
+                    <p>En cuanto al CSS3 se ha hecho uso de:</p>
+                    <ul>
+                        <li>Flex</li>
+                        <li>Grid</li>
+                        <li>Media Queries</li>
+                        <li>Transiciones</li>
+                        <li>Transformaciones</li>
+                        <li>Animaciones</li>
+                        <li>Keyframes</li>
+                        <li>Clases</li>
+                        <li>Herencia</li>
+                        <li>Psuedo-clases</li>
+                    </ul>
+                    <p>En cuanto al JavaScript y JQuery, se ha hecho uso de ellos para conseguir el menu "hamburguesa" y
+                        para que el texto se esconda debajo del header a medida que se vaya bajando en la página para
+                        que así, sea mas accesible.
+                    </p>
+                    <p>En cuanto a la accesibilidad, se ha hecho uso de etiquetas semánticas para que el sitio web sea
+                        más accesible para personas con discapacidad visual, también se ha hecho uso de etiquetas
+                        alt en las imágenes para que así, las personas con discapacidad auditiva puedan saber de que
+                        trata la imagen.
+                    </p>
+                    <p>
+                        Una vez terminado el proyecto se han pasado los archivos CSS por el validador para
+                        confirmar que no hay fallos.
+                    </p>
+                    <p>
+                        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                            <img style="border:0;width:88px;height:31px"
+                                src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!" />
+                        </a>
+                    </p>
+
+
+                </div>
+            </div>
         </main>
         <footer>
             <div class="contacto">
                 <p>© MARCOS ALLOZA GARCIA</p>
-                <p>marcos.alloza4@gmail.com</p>
+                <p><a href="mailto:marcos.alloza4@gmail.com">marcos.alloza4@gmail.com</a></p>
             </div>
             <section class="buttons">
                 <a href="https://github.com/Alloz4" class="fa-brands fa-github"></a>
