@@ -47,11 +47,11 @@ header {
     justify-content: space-between;
     margin-right: 1rem;
     margin-left: 1rem;
-    width: 98%;
+    width: 97%;
 }
 
 .menu-fixed {
-    width: 98%;
+    width: 97%;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -185,6 +185,9 @@ footer {
     justify-content: space-between;
     background-color: hsla(36, 99%, 29%, 0.25);
     margin-top: 2rem;
+    width: 100%;
+    bottom: 0;
+    align-self: flex-end;
 }
 
 .contacto {
@@ -254,11 +257,12 @@ footer {
 
     .boton-navegador {
         display: block;
+        font-size: 1.8rem;
     }
 
     .boton-navegador:hover {
         color: hsl(36, 99%, 29%);
-        transform: scale(1.2);
+        transform: scale(1.1);
         transition: color 0.4s;
     }
 
@@ -270,18 +274,98 @@ footer {
         z-index: 1;
         text-align: center;
     }
+
+    .logo {
+        width: 80px;
+        height: auto;
+        padding-right: 1rem;
+    }
+
+    .linea-vertical {
+        height: 30px;
+        width: .1rem;
+        margin: 1rem;
+    }
+
+    .nombre {
+        font-size: 1.8rem;
+    }
+
+    .buttons a {
+        font-size: 16px;
+    }
 }
 
-/* @media (max-width: 992px) {
-    .buttons {
-        min-width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin-right: 1.5rem;
+@media (max-width: 768px) {
+    .boton-navegador {
+        display: block;
+        font-size: 1.6rem;
+        padding-right: 1rem;
     }
-} */
 
-@media (max-width: 768px) {}
+    .logo {
+        width: 70px;
+        height: auto;
+        padding-right: 1rem;
+    }
 
-@media (max-width: 576px) {}
+    .linea-vertical {
+        height: 20px;
+        width: .1rem;
+        margin: .5rem;
+    }
+
+    .nombre {
+        font-size: 1.5rem;
+    }
+
+
+    .buttons {
+        min-width: 500px;
+    }
+
+    .buttons a {
+        font-size: 14px;
+    }
+
+    .contacto p {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .boton-navegador {
+        display: block;
+        font-size: 1.4rem;
+        padding-right: 2rem;
+    }
+
+    .logo {
+        width: 70px;
+        height: auto;
+        padding-right: 1rem;
+    }
+
+    .linea-vertical {
+        height: 20px;
+        width: .1rem;
+        margin: .5rem;
+    }
+
+    .nombre {
+        font-size: 1.5rem;
+    }
+
+    .buttons {
+        min-width: 250px;
+    }
+
+    .buttons a {
+        font-size: 12px;
+    }
+
+    .contacto p {
+        font-size: 8px;
+    }
+}

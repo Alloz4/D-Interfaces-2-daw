@@ -24,13 +24,13 @@
 .portfolio-down {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     margin: 0 2rem 0 2rem;
 }
 
 .trabajo {
     display: flex;
-    flex: 1 1 25%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -76,10 +76,70 @@
 }
 
 
-@media (max-width: 1100px) {}
+@media (max-width: 1100px) {
+    .texto {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
 
-@media (max-width: 992px) {}
+    .trabajo img {
+        width: 150px;
+        height: 100px;
+    }
 
-@media (max-width: 768px) {}
+    .texto-trabajo {
+        font-size: .8rem;
+    }
 
-@media (max-width: 576px) {}
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        margin: 1rem;
+    }
+
+    .texto {
+        font-size: 1rem;
+        line-height: 1.1rem;
+    }
+
+    .portfolio-down {
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+    .trabajo img {
+        width: 100px;
+        height: 75px;
+    }
+
+    .texto-trabajo {
+        font-size: .7rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .portfolio {
+        margin: 1rem;
+    }
+
+    .texto {
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+
+    .portfolio-down {
+        flex-direction: column;
+    }
+
+    .trabajo img {
+        width: 75px;
+        height: 50px;
+    }
+
+    .texto-trabajo {
+        font-size: .6rem;
+    }
+
+}
