@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Práctica Canvas - Marcos Alloza</title>
+</head>
+
+<body>
+    <header>
+        <h1>Práctica Canvas</h1>
+    </header>
+    <main>
+        <div class="lienzo">
+            <canvas id="canvas" width="400" height="500" style="border: 1px solid #000;"></canvas>
+        </div>
+        <div class="texto">
+            <h2>¿Qué es?</h2>
+            <p>
+                El elemento HTML canvas (&lt;canvas&gt;) se puede utilizar para dibujar gráficos a través de secuencias
+                de
+                comandos (por lo general JavaScript ). Por ejemplo, puede usarse para dibujar gráficos, hacer
+                composiciones de fotos o incluso realizar animaciones. <br><br>
+                El elemento &lt;canvas&gt; también se usa en WebGL para dibujar gráficos 3D con aceleración por hardware
+                en
+                páginas web. <br><br>
+                El elemento &lt;canvas&gt; es un elemento de bloque, por lo que se puede colocar en cualquier lugar de
+                la
+                página web. <br><br>
+
+                Los atributos width y height del elemento canvas no especifican el tamaño del canvas en sí, sino
+                el
+                tamaño del área que se mostrará en la página web. Por defecto, el canvas tiene un tamaño de 300 x 150
+                px.
+                <br><br>
+                <b>Páginas de interes sobre canvas: </b><br><br>
+                <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/canvas" target="_blank">MDN</a> <br>
+                <a href="https://www.w3schools.com/html/html5_canvas.asp" target="_blank">W3Schools</a> <br>
+                <a href="https://www.w3.org/TR/2011/WD-html5-author-20110809/the-canvas-element.html"
+                    target="_blank">W3C</a> <br>
+
+            </p>
+        </div>
+    </main>
+    <footer>
+        <b>
+            <p>Marcos Alloza</p>
+        </b>
+    </footer>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+
+        context.beginPath();
+        context.lineWidth = 10;
+        context.strokeStyle = "rgb(0, 0, 0)";
+        context.arc(200, 233, 150, 0, 2 * Math.PI, true);
+        context.stroke();
+
+        context.beginPath();
+        context.fillStyle = "rgb(75, 150, 235)";
+        context.arc(200, 233, 150, 0, 2 * Math.PI, true);
+        context.fill();
+
+        context.lineWidth = 20;
+        context.beginPath();
+        context.moveTo(230, 130);
+        context.bezierCurveTo(230, 130, 230, 130, 240, 200);
+        context.stroke();
+
+        context.beginPath();
+        context.moveTo(170, 130);
+        context.bezierCurveTo(170, 130, 170, 130, 160, 200);
+        context.stroke();
+
+        context.beginPath();
+        context.moveTo(100, 230);
+        context.bezierCurveTo(100, 230, 200, 380, 300, 230);
+        context.stroke();
+
+        context.beginPath();
+        context.moveTo(100, 235);
+        context.bezierCurveTo(105, 270, 200, 480, 300, 232);
+        context.stroke();
+
+    </script>
+</body>
+
+</html>
