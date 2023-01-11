@@ -1,0 +1,125 @@
+body {
+  background-color: #ccc;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+header h1 {
+  color: #f00;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.contenedor .caja {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000;
+  color: #f00;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contenedor .caja h2 {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: bold;
+  color: #f00;
+  font-size: 30px;
+}
+.contenedor .caja p {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: #f00;
+  color: rgb(214, 2, 2);
+}
+.contenedor .caja:hover {
+  background-color: #000;
+  scale: 1.1;
+  transition: all 0.2s ease;
+}
+.contenedor a .cristiano {
+  width: 70%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  grid-area: footer;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  margin-top: 2rem;
+  width: 100%;
+  bottom: 0;
+  align-self: flex-end;
+}
+
+.contacto {
+  padding: 0.3rem;
+}
+
+.contacto p {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: #f00;
+  font-size: 12px;
+  margin: 0.5rem;
+}
+
+.contacto a {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: #f00;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  text-shadow: 5px 5px 5px hsl(0deg, 0%, 0%);
+}
+
+.buttons {
+  min-width: 700px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-right: 1.5rem;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  color: #f00;
+  transition: all 0.4s ease-in-out;
+  text-shadow: 5px 5px 5px hsl(0deg, 0%, 0%);
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
+}/*# sourceMappingURL=estilo.css.map */

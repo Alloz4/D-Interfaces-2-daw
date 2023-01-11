@@ -1,0 +1,139 @@
+@mixin encabezado($propiedad){
+    font-size: $propiedad;
+}
+@mixin text {
+    font: {
+        family: Roboto;
+        size: 20px;
+        weight: normal;
+    }
+    letter-spacing: 2px;
+    color: map-get($colores, "rojo");
+  }
+@mixin large-text {
+    font: {
+      family: Roboto;
+      size: 30px;
+      weight: bold;
+    }
+    color: map-get($colores, "rojo");
+  }
+$colores: (
+    "rojo": #f00,
+    "rojo-oscuro": rgb(214, 2, 2),
+    "azul": #00f,
+    "gris": #ccc,
+    "negro": #000
+);
+body {
+    background-color: map-get($colores, "gris");
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: map-get($colores, "negro");
+    margin-bottom: 2rem;
+    padding: 1rem;
+    h1{
+        color: map-get($colores, "rojo");
+        @include encabezado(50px);
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+}
+    
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    .caja{
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: map-get($colores, "negro");
+        color: map-get($colores, "rojo");
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .caja h2{
+        @include large-text;
+        @include encabezado(30px);
+    }
+    .caja p{
+        @include text;
+        @if 1 + 1 == 2 {
+            color: map-get($colores, "rojo-oscuro");
+        }
+    }
+    .caja:hover {
+        background-color: map-get($colores, "negro");
+        scale: 1.1;
+        transition: all 0.2s ease;
+    }
+    a .cristiano {
+        width: 70%;
+    }
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    grid-area: footer;
+    align-items: center;
+    justify-content: space-between;
+    background-color: map-get($colores, "negro");
+    margin-top: 2rem;
+    width: 100%;
+    bottom: 0;
+    align-self: flex-end;
+}
+
+.contacto {
+    padding: .3rem;
+}
+
+.contacto p {
+    @include text;
+    font-size: 12px;
+    margin: 0.5rem;
+}
+
+.contacto a {
+    @include text;
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    transition: all .4s ease-in-out;
+    text-shadow: 5px 5px 5px hsl(0, 0%, 0%, 1);
+}
+
+.buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-right: 1.5rem;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    color: map-get($colores, "rojo");
+    transition: all .4s ease-in-out;
+    text-shadow: 5px 5px 5px hsl(0, 0%, 0%, 1);
+}
+
+.buttons a:hover {
+    transform: scale(1.2);
+}
+
