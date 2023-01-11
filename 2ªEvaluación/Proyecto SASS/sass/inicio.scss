@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Quicksand Bold';
+    src: url('../fonts/Quicksand-Bold.ttf');
+}
+
+@mixin text ($valor) {
+    font: {
+        family: 'Quicksand';
+        size: $valor;
+    }
+    letter-spacing: 2px;
+    color: map-get($colores, "blanco");
+}
+
+@mixin text-encabezado ($valor) {
+    font: {
+        family: 'Quicksand';
+        size: $valor;
+    }
+    letter-spacing: 2px;
+    color: map-get($colores, "blanco");
+}
+
+$colores: (
+    "amarillo" : hsl(36, 98%, 48%),
+    "negro" : hsl(0, 0%, 0%),
+    "blanco" : hsl(0, 0%, 100%),
+    "gris" : hsla(0, 0%, 25%,0.8),
+    "gris-claro" : hsl(0, 0%, 25%, 0.7),
+);
+
+main{
+    animation: texto 1s ease-in-out;
+}
+
+.quienes-somos{
+    margin: 0 auto;
+    padding: 0 20px;
+    color: map-get($colores, "blanco");
+    grid-area: main;
+    h2 {
+        @include text-encabezado(18px);
+        margin-bottom: 1rem;
+    }
+    p{
+        @include text(14px);
+        margin-bottom: 1rem;
+        text-shadow: 5px 5px 5px map-get($colores, "gris");
+    }
+}
+
+.comprar{
+    margin: 0 auto;
+    padding: 0 20px;
+    color: map-get($colores, "blanco");
+    grid-area: main;
+    h2 {
+        @include text-encabezado(18px);
+        margin-bottom: 1rem;
+    }
+    p{
+        @include text(14px);
+        margin-bottom: 1rem;
+        text-shadow: 5px 5px 5px map-get($colores, "gris");
+    }
+}
+
+.bicicletas {
+    margin: 0 auto;
+    padding: 0 20px;
+    color: map-get($colores, "blanco");
+    grid-area: main;
+    h2 {
+        @include text-encabezado(18px);
+        margin-bottom: 1rem;
+    }
+    p{
+        @include text(14px);
+        margin-bottom: 1rem;
+        text-shadow: 5px 5px 5px map-get($colores, "gris");
+    }
+}
+
+@keyframes texto {
+  from{
+      opacity: 0;
+      transform: translateX(-50%);
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0%);
+  }
+}

@@ -1,0 +1,180 @@
+@function font-size($valor) {
+    @return $valor / 16px * 1rem;
+}
+
+@mixin text($valor) {
+    font: {
+        family: 'Quicksand';
+        size: font-size($valor);
+    }
+    letter-spacing: 2px;
+    color: map-get($colores, "blanco");
+}
+
+@mixin text-negrita {
+    font: {
+        family: 'Quicksand Bold';
+        size: font-size(18px);
+    }
+    letter-spacing: 2px;
+    color: map-get($colores, "blanco");
+}
+
+@mixin text-encabezado ($valor) {
+    font: {
+        family: 'Quicksand';
+        size: font-size($valor);
+    }
+    letter-spacing: 2px;
+    color: map-get($colores, "blanco");
+}
+
+@mixin text-encabezado-negrita ($valor) {
+    font: {
+        family: 'Quicksand Bold';
+        size: font-size($valor);
+    }
+    letter-spacing: 2px;
+    color: map-get($colores, "amarillo");
+}
+
+
+
+
+$colores: (
+    "amarillo" : hsl(36, 98%, 48%),
+    "negro" : hsl(0, 0%, 0%),
+    "blanco" : hsl(0, 0%, 100%),
+    "gris" : hsla(0, 0%, 25%,0.8),
+    "gris-claro" : hsl(0, 0%, 25%, 0.7),
+);
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    min-height: 100vh;
+    width: 100%;
+}
+
+body {
+    background-color: map-get($colores, "gris-claro");
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-bottom: 2rem;
+    padding: .8rem;
+    padding-bottom: .1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 8rem;
+    grid-area: header;
+    background-color: map-get($colores, "gris");
+
+    .logo:hover{
+        transform: scale(1.1);
+        transition: ease-in-out 0.3s;
+    }
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    .nav-link {
+        position: relative;
+        z-index: 1;
+        text-decoration: none;
+        @include text-encabezado(14px);
+        padding: .4rem;
+    }
+    .nav-link:hover {
+        @include text-encabezado-negrita(14px);
+    }
+    .nav-active {
+        @include text-encabezado-negrita(14px);
+    }
+    .nav-link:before {
+        position: absolute;
+        content: '';
+        display: block;
+        z-index: -1;
+        background: map-get($colores,"amarillo");
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s cubic-bezier(.03, .3, .4, .96);
+        transform: scaleX(0);
+    }
+    .nav-link:hover:before {
+        transform: scaleX(1);
+        @include text-encabezado-negrita(14px);
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    color: map-get($colores, "blanco");
+    grid-area: main;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    grid-area: footer;
+    align-items: center;
+    justify-content: space-between;
+    background-color: map-get($colores, "gris");
+    margin-top: 2rem;
+    width: 100%;
+    bottom: 0;
+    align-self: flex-end;
+
+    .contacto {
+        padding: .3rem;
+        p {
+            @include text(12px);
+            margin: 0.5rem;
+        }
+        a {
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            transition: all .4s ease-in-out;
+            text-shadow: 5px 5px 5px map-get($colores, "gris");
+        }
+    }
+    .social-media {
+        min-width: 700px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        margin-right: 1.5rem;
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            text-align: center;
+            color: white;
+            transition: all .4s ease-in-out;
+            text-shadow: 5px 5px 5px map-get($colores, "gris");
+        }
+
+        a:hover {
+            transform: scale(1.2);
+        }
+    }
+}

@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Light.ttf");
+}
+@font-face {
+  font-family: "Quicksand Bold";
+  src: url("../fonts/Quicksand-Bold.ttf");
+}
+.encabezado {
+  font-family: "Quicksand Bold";
+  font-size: 18px;
+  text-align: left;
+  letter-spacing: 2px;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1rem;
+}
+
+.bike {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  -webkit-animation: tarjetas 0.5s ease;
+          animation: tarjetas 0.5s ease;
+}
+.bike .btt {
+  width: 100%;
+  max-width: 300px;
+  padding: 1rem;
+  background-color: hsla(0deg, 0%, 25%, 0.8);
+  margin-bottom: 2.5rem;
+}
+.bike .btt h3 {
+  text-align: center;
+  font-family: "Quicksand";
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: hsl(0deg, 0%, 100%);
+}
+.bike .btt p {
+  text-align: justify;
+  font-family: "Quicksand";
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: hsl(0deg, 0%, 100%);
+}
+.bike .btt:hover {
+  scale: 1.1;
+  transition: all 0.2s ease;
+}
+.bike .btt .precio {
+  font-family: "Quicksand Bold";
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: hsl(36deg, 98%, 48%);
+}
+.bike .road {
+  width: 100%;
+  max-width: 300px;
+  padding: 1rem;
+  background-color: hsla(0deg, 0%, 25%, 0.8);
+  margin-bottom: 2.5rem;
+}
+.bike .road h3 {
+  font-family: "Quicksand";
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+}
+.bike .road p {
+  font-family: "Quicksand";
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: hsl(0deg, 0%, 100%);
+  text-align: justify;
+}
+.bike .road:hover {
+  scale: 1.1;
+  transition: all 0.2s ease;
+}
+.bike .road .precio {
+  font-family: "Quicksand Bold";
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: hsl(36deg, 98%, 48%);
+}
+
+@-webkit-keyframes tarjetas {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes tarjetas {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=bicicletas.css.map */

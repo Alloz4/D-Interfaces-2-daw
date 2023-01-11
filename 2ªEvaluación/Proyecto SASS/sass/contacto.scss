@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Quicksand Bold';
+    src: url('../fonts/Quicksand-Bold.ttf');
+}
+
+@mixin texto($valor) {
+    font: {
+        family: 'Quicksand';
+        size: $valor;
+    }
+    letter-spacing: 2px;
+    color: map-get($colores, "blanco");
+}
+
+$colores: (
+    "amarillo" : hsl(36, 98%, 50%),
+    "amarillo-oscuro":hsl(36, 100%, 45%), 
+    "negro" : hsl(0, 0%, 0%),
+    "blanco" : hsl(0, 0%, 100%),
+    "gris" : hsla(0, 0%, 25%,0.8),
+    "gris-claro" : hsl(0, 0%, 25%, 0.7),
+);
+
+.form-contacto{
+    @include texto(16px);  
+}
+
+form {
+    width: 400px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid map-get($colores, "gris");
+    border-radius: 5px;
+    animation: form 1s ease-in-out;
+
+}
+
+/* Estilos para los labels */
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilos para los inputs y textarea */
+
+input[type='text'], 
+input[type='email'], 
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+/* Estilos para el botón de submit */
+
+input[type='submit']{
+    width: 100%;
+    background-color: map-get($colores, "amarillo");
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover{
+        background-color: map-get($colores, "amarillo-oscuro");
+    }
+}
+
+@keyframes form {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateY(-45px);
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateY(-24px);
+    }
+
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateY(-12px);
+    }
+
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateY(-6px);
+    }
+
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateY(-4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        animation-timing-function: ease-out;
+        transform: translateY(0px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

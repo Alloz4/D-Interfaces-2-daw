@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-Light.ttf");
+}
+@font-face {
+  font-family: "Quicksand Bold";
+  src: url("../fonts/Quicksand-Bold.ttf");
+}
+main {
+  -webkit-animation: texto 1s ease-in-out;
+          animation: texto 1s ease-in-out;
+}
+
+.quienes-somos {
+  margin: 0 auto;
+  padding: 0 20px;
+  color: hsl(0deg, 0%, 100%);
+  grid-area: main;
+}
+.quienes-somos h2 {
+  font-family: "Quicksand";
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1rem;
+}
+.quienes-somos p {
+  font-family: "Quicksand";
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1rem;
+  text-shadow: 5px 5px 5px hsla(0deg, 0%, 25%, 0.8);
+}
+
+.comprar {
+  margin: 0 auto;
+  padding: 0 20px;
+  color: hsl(0deg, 0%, 100%);
+  grid-area: main;
+}
+.comprar h2 {
+  font-family: "Quicksand";
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1rem;
+}
+.comprar p {
+  font-family: "Quicksand";
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1rem;
+  text-shadow: 5px 5px 5px hsla(0deg, 0%, 25%, 0.8);
+}
+
+.bicicletas {
+  margin: 0 auto;
+  padding: 0 20px;
+  color: hsl(0deg, 0%, 100%);
+  grid-area: main;
+}
+.bicicletas h2 {
+  font-family: "Quicksand";
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1rem;
+}
+.bicicletas p {
+  font-family: "Quicksand";
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1rem;
+  text-shadow: 5px 5px 5px hsla(0deg, 0%, 25%, 0.8);
+}
+
+@-webkit-keyframes texto {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes texto {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}/*# sourceMappingURL=inicio.css.map */

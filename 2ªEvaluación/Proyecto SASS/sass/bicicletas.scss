@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Quicksand Bold';
+    src: url('../fonts/Quicksand-Bold.ttf');
+}
+
+
+@mixin text ($valor) {
+    font: {
+        family: 'Quicksand';
+        size: $valor;
+    }
+    letter-spacing: 2px;
+    color: map-get($colores, "blanco");
+}
+
+@mixin text-encabezado ($valor) {
+    font: {
+        family: 'Quicksand Bold';
+        size: $valor;
+    }
+    text-align: left;
+    letter-spacing: 2px;
+    color: map-get($colores, "blanco");
+}
+
+@mixin text-precio {
+    font: {
+        family: 'Quicksand Bold';
+        size: 14px;
+    }
+    text-align: center;
+    letter-spacing: 2px;
+    color: map-get($colores, "amarillo");
+}
+
+$colores: (
+    "amarillo" : hsl(36, 98%, 48%),
+    "negro" : hsl(0, 0%, 0%),
+    "blanco" : hsl(0, 0%, 100%),
+    "gris" : hsla(0, 0%, 25%,0.8),
+    "gris-claro" : hsl(0, 0%, 25%, 0.7),
+    "rojo" : rgb(250, 38, 38),
+);
+.encabezado{
+    @include text-encabezado(18px);
+    margin-bottom: 1rem;
+}
+.bike {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    animation: tarjetas 0.5s ease;
+    .btt{
+        width: 100%;
+        max-width: 300px;
+        padding: 1rem;
+        background-color: map-get($colores, "gris");
+        margin-bottom: 2.5rem;
+        & h3{
+            text-align: center;
+            @include text(12px);
+        }
+        & p{
+            text-align: justify;
+            @include text(12px);
+        }
+        &:hover{
+            scale: 1.1;
+            transition: all 0.2s ease;
+        }
+        .precio {
+            @include text-precio();
+        }
+    }
+    .road{
+        width: 100%;
+        max-width: 300px;
+        padding: 1rem;
+        background-color: map-get($colores, "gris");
+        margin-bottom: 2.5rem;
+        & h3{
+            @include text(12px);
+            text-align: center;
+        }
+        & p{
+            @include text(12px);
+            text-align: justify;
+        }
+        &:hover{
+            scale: 1.1;
+            transition: all 0.2s ease;
+        }
+        .precio {
+            @include text-precio();
+        }
+    }
+}
+
+@keyframes tarjetas {
+  
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+
