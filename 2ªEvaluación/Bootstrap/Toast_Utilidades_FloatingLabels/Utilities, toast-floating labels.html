@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Utilities, Toast-floating, Labels</title>
+    <style>
+        span {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 6px;
+            background-color: #f9f9f9;
+        }
+
+        body {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ej01">
+        <h1>EJERCICIO 1</h1>
+        <p>Crear un formulario login que contenga email y contraseña utilizando los floating labels.</p>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+            <label for="email">Email</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+            <label for="password">Password</label>
+        </div>
+
+    </div>
+    <hr>
+    <div class="eje02">
+        <h1>EJERCICIO 2</h1>
+        <p>A partir de los elementos &lt;span&gt; aplica las siguientes caracteristicas:</p>
+        <ul>
+            <li>&lt;span&gt; 1: Borde de tipo 1, color warning y un width de 25.</li>
+            <li>&lt;span&gt; 2: Borde de tipo 3 , forma circular y con sombra.</li>
+            <li>&lt;span&gt; 3: Borde de tipo 5, sin borde superior, background color primario y borde warning.</li>
+        </ul>
+
+        <div class="box">
+            <span class="border border border-danger w-25"></span>
+            <span class="border border-3 rounded-circle shadow"></span>
+            <span class="border border-5 border-top-0 bg-primary border-warning"></span>
+        </div>
+
+        <p>A partir del elemento &lt;p&gt; <b>"Esto es un texto"</b> haz que:</p>
+        <ul>
+            <li>Background warning</li>
+            <li>Padding tipo 3</li>
+            <li>Texto blanco</li>
+            <li>Flotado a la izquierda</li>
+        </ul>
+
+        <div class="text">
+            <p class="float-start p-3 bg-warning text-white">Esto es un texto</p>
+        </div>
+        <br><br><br>
+    </div>
+    <hr>
+    <div class="eje03">
+        <h1>EJERCICIO 3</h1>
+        <p>Realiza un Toast con ventana de cierre en Bootstrap que indique las requerimientos necesarios que debe
+            cumplir una contraseña segura,</p>
+        <div class="toast show">
+            <div class="toast-header">
+                <strong class="me-auto">Una contraseña segura</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                <p>Debe tener 8 carácteres de longitud,una mayúscula y un número</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr>
+</body>
+
+</html>

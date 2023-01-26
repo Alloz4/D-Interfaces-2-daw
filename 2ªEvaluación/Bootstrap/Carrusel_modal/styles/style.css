@@ -1,0 +1,41 @@
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    width:100wd;
+}
+header{
+    background-color:rgb(70, 100, 233);
+    margin-bottom:2%;
+    padding:1.5em;
+    display:flex;
+    justify-content:center;
+}
+h1{
+    margin:0;
+    font-weight:bold;
+}
+.container{
+    width:40vw;
+    display:flex;
+    justify-content:center;
+    padding:3%;
+}
+.modal-header{
+    background-color:rgb(70,100,233);
+}
+h4{
+    font-weight:bold;
+}
+.modal-body{
+    display:flex;
+    justify-content:space-evenly;
+}
+.modal-footer{
+    background-color:rgba(70, 100, 233, 0.582);
+    display:flex;
+    justify-content:space-between;
+}
+.icono{
+    max-width:5vw;
+}
