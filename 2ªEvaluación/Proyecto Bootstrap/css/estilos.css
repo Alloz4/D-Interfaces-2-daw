@@ -1,0 +1,322 @@
+/* Fuentes importadas */
+
+@font-face {
+    font-family: 'Heebo';
+    src: url('../fonts/Heebo-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Heebo Bold';
+    src: url('../fonts/Heebo-Bold.ttf');
+}
+
+/* Estilos generales para el body */
+
+body {
+    background-color: hsl(180, 50%, 99%);
+    font-family: 'Heebo';
+}
+
+/* Estilos para el header */
+
+.ml-auto,
+.mx-auto {
+    margin-left: auto;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler>.btn:focus {
+    box-shadow: none;
+}
+
+#menu-despegable {
+    background-color: hsl(0, 100%, 40%);
+    border: none;
+    border-radius: 0;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Heebo Bold';
+    font-size: .9rem;
+}
+
+#menu-despegable:hover {
+    background-color: hsl(0, 100%, 45%);
+    color: hsl(0, 0%, 100%);
+}
+
+#menu-despegable:focus {
+    box-shadow: none;
+}
+
+.nav>li>a {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    font-family: 'Heebo Bold';
+}
+
+.nav>li>a:hover {
+    color: hsl(0, 100%, 40%);
+}
+
+.nav>li>a.active {
+    color: hsl(0, 98%, 40%);
+}
+
+.nav>li>a:before {
+    position: absolute;
+    content: '';
+    display: block;
+    z-index: -1;
+    background-color: hsl(0, 100%, 40%);
+    width: 0;
+    height: 4px;
+    top: 75%;
+    left: 0;
+    transition: width 0.3s ease-in;
+}
+
+.nav>li>a:hover:before {
+    width: 98%;
+}
+
+.nav>li>a.active:before {
+    width: 98%;
+}
+
+.navbar-nav>li>a {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    font-family: 'Heebo Bold';
+}
+
+.navbar-nav>li>a:hover {
+    color: hsl(0, 100%, 40%);
+}
+
+.navbar-nav>li>a.active {
+    color: hsl(0, 98%, 40%);
+}
+
+.navbar-nav>li>a:before {
+    position: absolute;
+    content: '';
+    display: block;
+    z-index: -1;
+    background-color: hsl(0, 100%, 40%);
+    width: 0;
+    height: 4px;
+    top: 75%;
+    left: 0;
+    transition: width 0.3s ease-in;
+}
+
+.navbar-nav>li>a:hover:before {
+    width: calc(100% + 2px);
+}
+
+.navbar-nav>li>a.active:before {
+    width: calc(100% + 2px);
+}
+
+.dropdown-menu {
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.dropdown-menu .dropdown-item {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: hsl(0, 0%, 100%);
+    width: auto;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: hsl(0, 100%, 40%);
+}
+
+.dropdown-menu .dropdown-item:before {
+    position: absolute;
+    content: '';
+    display: block;
+    z-index: -1;
+    background-color: hsl(0, 100%, 40%);
+    width: 0;
+    height: 4px;
+    top: 75%;
+    left: 10px;
+    transition: width 0.3s ease-in;
+}
+
+.dropdown-menu .dropdown-item:hover:before {
+    width: 92%;
+}
+
+.dropdown-menu .dropdown-item.active:before {
+    width: 92%;
+}
+
+.dropdown-menu .dropdown-item.active {
+    color: hsl(0, 100%, 40%);
+}
+
+
+.scroll-up-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: hsl(0, 100%, 40%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px 15px;
+    border-radius: 50%;
+    display: none;
+}
+
+.scroll-up-btn i {
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+}
+
+.cart-item-count {
+    display: inline-block;
+    background-color: #0c0b0b;
+    color: hsl(0, 0%, 100%);
+    width: 15px;
+    height: 15px;
+    font-size: 7px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 1px;
+    top: 0px;
+}
+
+
+
+
+/* Estilos para el footer */
+footer {
+    background-color: hsl(0, 0%, 5%);
+    color: hsl(0, 0%, 95%);
+    font-family: 'Heebo';
+}
+
+.d-flex>p {
+    color: hsl(0, 0%, 95%);
+    font-size: .9rem;
+}
+
+.d-flex>a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.mail {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+#phone {
+    color: hsl(0, 0%, 100%);
+}
+
+#ubicacion {
+    color: hsl(0, 0%, 100%);
+}
+
+.mail:hover {
+    color: hsl(0, 100%, 40%);
+}
+
+
+.fa-phone {
+    color: hsl(0, 100%, 40%);
+}
+
+.fa-envelope {
+    color: hsl(0, 100%, 40%);
+}
+
+.fa-map-marker-alt {
+    color: hsl(0, 100%, 40%);
+}
+
+#newsletter {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Heebo';
+    font-size: .9rem;
+}
+
+.form-control {
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#boton {
+    background-color: hsl(0, 100%, 40%);
+    border: none;
+    border-radius: 0;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Heebo Bold';
+    font-size: .9rem;
+}
+
+#boton:hover {
+    background-color: hsl(0, 100%, 45%);
+    color: hsl(0, 0%, 100%);
+}
+
+#boton:focus {
+    box-shadow: none;
+}
+
+.media {
+    color: hsl(0, 0%, 100%);
+}
+
+.media a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: .9rem;
+}
+
+.media a:hover {
+    color: hsl(0, 100%, 40%);
+}
+
+.copy {
+    font-size: .7rem;
+    padding: 1rem;
+}
+
+.linkdin {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.linkdin:hover {
+    color: hsl(0, 0%, 65%);
+    text-decoration: underline;
+}

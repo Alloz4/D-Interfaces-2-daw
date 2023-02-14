@@ -1,0 +1,99 @@
+.container h1 {
+    font-family: 'Heebo Bold';
+    font-style: italic;
+    color: hsl(0, 0%, 5%);
+}
+
+#ordenacion {
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 0;
+    color: hsl(0, 0%, 0%);
+}
+
+#ordenacion:focus {
+    box-shadow: none;
+}
+
+
+.card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 10px hsl(0, 0%, 80%);
+}
+
+.card-img-top {
+    border-radius: 0;
+}
+
+.card-img-top:hover {
+    cursor: pointer;
+}
+
+.card-title {
+    font-family: 'Heebo Bold';
+    font-style: italic;
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 5%);
+}
+
+.card-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px hsl(0, 0%, 60%);
+    border: 1px solid hsl(0, 0%, 60%);
+}
+
+
+.btn {
+    background-color: hsl(0, 0%, 0%);
+    border: none;
+    border-radius: 0;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Heebo Bold';
+    font-size: .9rem;
+}
+
+.btn:hover {
+    background-color: hsl(0, 100%, 45%);
+    color: hsl(0, 0%, 100%);
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.badge {
+    background-color: hsl(0, 100%, 40%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Heebo Bold';
+    font-size: .9rem;
+}
+
+.d-flex .prize-old {
+    color: hsl(0, 0%, 0%);
+}
+
+.d-flex .prize-new {
+    color: hsl(0, 100%, 40%);
+    font-family: 'Heebo Bold';
+}
+
+.modal-title {
+    font-family: 'Heebo Bold';
+    font-style: italic;
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 5%);
+}
+
+.modal-header button {
+    background-color: hsl(0, 0%, 0%);
+    border: none;
+    border-radius: 0;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Heebo Bold';
+    font-size: .9rem;
+}

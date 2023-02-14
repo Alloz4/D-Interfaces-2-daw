@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda de bicicletas">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/shop-mtb.css">
+    <link rel="shortcut icon" href="../images/favicono2.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0dd31d40e8.js"></script>
+    <title>4LL BIKES</title>
+</head>
+
+<body>
+    <header class="sticky-top">
+        <div class="container-fluid bg-white shadow-sm p-3 bg-light">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/4LL BIKES.svg" alt="Logo" style="width:210px;">
+                </a>
+                <ul class="nav nav-actions d-lg-none ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link link-dark m-0 p-0 lupa" href="" data-bs-toggle="searchModal"
+                            aria-label="Buscar">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-dark m-0 p-0" href="#" aria-label="Carrito">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-item-count" id="carrito">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="menu-hamburguesa navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar" aria-label="Toggle navigation">
+                    <a class="btn btn-outline-danger menu" href="#" role="button" id="menu-despegable">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </button>
+                <div class="navbar-collapse collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle link-dark active" data-bs-toggle="dropdown" href="#"
+                                role="button" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active" href="../web/shop-mtb.html">Bicicletas de
+                                        Montaña</a></li>
+                                <li><a class="dropdown-item" href="../web/shop-road.html">Bicicletas de Carretera</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" href="../web/acerca-de.html">Acerca de</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav d-none d-lg-flex">
+                    <li class="nav-item">
+                        <a class="nav-link link-dark" href="" data-bs-toggle="searchModal" aria-label="Buscar">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-dark" href="#" aria-label="Carrito">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-item-count" id="carrito2">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-5 mt-4">
+                    <div class="d-flex justify-content-between">
+                        <h1 class="mt-4">Bicicletas de Montaña</h1>
+                        <div class="d-flex">
+                            <select class="form-control form-control-sm mt-3" aria-label="Ordenar por" id="ordenacion">
+                                <option value="">Ordenar por:</option>
+                                <option value="1">Precio: más bajo primero</option>
+                                <option value="2">Precio: más alto primero</option>
+                                <option value="3">Nombre: A a Z</option>
+                                <option value="4">Nombre: Z a A</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5 justify-content-around">
+
+                <!-- Card Bicicleta 1-->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-5">
+                    <div class="card">
+                        <img class="card-img-top p-2" src="../images/bikes/mtb/mtb1.jpg"
+                            alt="Bicicleta Specialized Chisel Comp" data-bs-toggle="modal" data-bs-target="#mtb1">
+                        <div class="card-body">
+                            <span class="badge mb-2">-20%</span>
+                            <h4 class="card-title text-center" data-bs-toggle="modal" data-bs-target="#mtb1">
+                                Bicicleta Specialized Chisel Comp</h4>
+                            <div class="d-flex justify-content-center">
+                                <p class="prize-new">1.920,00€</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p class="prize-old"><del>2.400,00€</del></p>
+                            </div>
+                            <a href=" #" class="btn comprar">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal para ver la bicleta 1 -->
+                <div class="modal fade" id="mtb1" tabindex="-1" role="dialog" aria-labelledby="bicicletaModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bicicletaModalLabel1">Bicicleta Specialized Chisel Comp</h5>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselMTB1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../images/bikes/mtb/mtb1.jpg" class="d-block w-100"
+                                                alt="Bicicleta Specialized Chisel Comp">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../images/bikes/mtb/mtb1_2.jpg" class="d-block w-100"
+                                                alt="Bicicleta Specialized Chisel Comp">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMTB1"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMTB1"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Bicicleta 2 -->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-5">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/bikes/mtb/mtb2.jpg" alt="Bicicleta Orbea OIZ LTD 2022"
+                            data-bs-toggle="modal" data-bs-target="#mtb2">
+                        <div class="card-body">
+                            <span class="badge mb-2">-10%</span>
+                            <h4 class="card-title text-center" data-bs-toggle="modal" data-bs-target="#mtb2">
+                                Bicicleta Orbea OIZ LTD 2022</h4>
+                            <div class="d-flex justify-content-center">
+                                <p class="prize-new">8.639,10€</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p class="prize-old"><del> 9.599,00€</del></p>
+                            </div>
+                            <a href="#" class="btn comprar">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal para ver la bicleta 2 -->
+                <div class="modal fade" id="mtb2" tabindex="-1" role="dialog" aria-labelledby="bicicletaModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bicicletaModalLabel2">Bicicleta Orbea OIZ LTD 2022</h5>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselMTB2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../images/bikes/mtb/mtb2.jpg" class="d-block w-100"
+                                                alt="Bicicleta Orbea OIZ LTD 2022 Marmol">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../images/bikes/mtb/mtb2_2.jpg" class="d-block w-100"
+                                                alt="Bicicleta Orbea OIZ LTD 2022 Gris">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMTB2"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMTB2"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Bicicleta 3-->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-5">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/bikes/mtb/mtb3.jpg" alt="Bicicleta Orbea Alma LTD 2022"
+                            data-bs-toggle="modal" data-bs-target="#mtb3">
+                        <div class="card-body">
+                            <span class="badge mb-2">-15%</span>
+                            <h4 class="card-title text-center" data-bs-toggle="modal" data-bs-target="#mtb3">
+                                Bicicleta Orbea Alma LTD 2022</h4>
+                            <div class="d-flex justify-content-center">
+                                <p class="prize-new">6.799,15€</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p class="prize-old"><del>7.999,00€</del></p>
+                            </div>
+                            <a href=" #" class="btn comprar">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal para ver la bicleta 3 -->
+                <div class="modal fade" id="mtb3" tabindex="-1" role="dialog" aria-labelledby="bicicletaModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bicicletaModalLabel3">Bicicleta Orbea Alma LTD 2022</h5>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselMTB3" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../images/bikes/mtb/mtb3.jpg" class="d-block w-100"
+                                                alt="Bicicleta Orbea Alma LTD 2022 Dark carbon">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../images/bikes/mtb/mtb3_2.jpg" class="d-block w-100"
+                                                alt="Bicicleta Orbea Alma LTD 2022 Azul">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMTB3"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMTB3"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Bicicleta 4, en esta card metemos un carrusel en la zona de la imagen -->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-5">
+                    <div class="card">
+                        <div class="carousel-inner">
+                            <div id="carouselMTB4" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselMTB4" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselMTB4" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselMTB4" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="../images/bikes/mtb/mtb4.jpg" class="d-block w-100"
+                                            alt="Bicicleta Scott Spark RC World Cup 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../images/bikes/mtb/mtb4_2.jpg" class="d-block w-100"
+                                            alt="Bicicleta Scott Spark RC World Cup 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../images/bikes/mtb/mtb4_3.jpg" class="d-block w-100"
+                                            alt="Bicicleta Scott Spark RC World Cup 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMTB4"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselMTB4"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <span class="badge"></span>
+                            <h4 class="card-title text-center" data-bs-toggle="modal" data-bs-target="#mtb4">
+                                Bicicleta Scott Spark RC World Cup EVO AXS</h4>
+                            <div class="d-flex justify-content-center">
+                                <p class="prize-new">10.999,99€</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p class="prize-old"><del></del></p>
+                            </div>
+                            <a href="#" class="btn comprar">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal para ver la bicleta 4 -->
+                <div class="modal fade" id="mtb4" tabindex="-1" role="dialog" aria-labelledby="bicicletaModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bicicletaModalLabel4">Bicicleta Scott Spark RC World Cup
+                                </h5>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe width="470" height="315" src="https://www.youtube.com/embed/2a3HJwRSS_I"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Bicicleta 5-->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-5">
+                    <div class="card">
+                        <img class="card-img-top p-1" src="../images/bikes/mtb/mtb5.jpg"
+                            alt="Ebike Specialized Tero 3.0" data-bs-toggle="modal" data-bs-target="#mtb5">
+                        <div class="card-body">
+                            <span class="badge mb-2">-20%</span>
+                            <h4 class="card-title text-center" data-bs-toggle="modal" data-bs-target="#mtb5">
+                                Ebike Specialized Tero 3.0 2022</h4>
+                            <div class="d-flex justify-content-center">
+                                <p class="prize-new">2.720,00 €</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p class="prize-old"><del>3.400,00€</del></p>
+                            </div>
+                            <a href=" #" class="btn comprar">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal para ver la bicleta 5 -->
+                <div class="modal fade" id="mtb5" tabindex="-1" role="dialog" aria-labelledby="bicicletaModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bicicletaModalLabel5">Ebike Specialized Tero 3.0 2022</h5>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselMTB5" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../images/bikes/mtb/mtb5.jpg" class="d-block w-100"
+                                                alt="Ebike Specialized Tero 3.0 2022 Verde">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../images/bikes/mtb/mtb5_2.jpg" class="d-block w-100"
+                                                alt="Ebike Specialized Tero 3.0 2022 Gris">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMTB5"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMTB5"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Bicicleta 6 -->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-5">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/bikes/mtb/mtb6.jpg"
+                            alt="Bicicleta Specialized Epic Evo 2022" data-bs-toggle="modal" data-bs-target="#mtb6">
+                        <div class="card-body">
+                            <span class="badge mb-2">-30%</span>
+                            <h4 class="card-title text-center" data-bs-toggle="modal" data-bs-target="#mtb6">
+                                Bicicleta Specialized Epic Evo 2022</h4>
+                            <div class="d-flex justify-content-center">
+                                <p class="prize-new">3.150,00€</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p class="prize-old"><del>4.500,00 €</del></p>
+                            </div>
+                            <a href=" #" class="btn comprar">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal para ver la bicleta 6 -->
+                <div class="modal fade" id="mtb6" tabindex="-1" role="dialog" aria-labelledby="bicicletaModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bicicletaModalLabel6">Bicicleta Specialized Epic Evo 2022
+                                </h5>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselMTB6" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../images/bikes/mtb/mtb6_2.jpg" class="d-block w-100"
+                                                alt="Bicicleta Specialized Epic Evo 2022">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../images/bikes/mtb/mtb6_3.jpg" class="d-block w-100"
+                                                alt="Bicicleta Specialized Epic Evo 2022">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMTB6"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMTB6"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Bicicleta 7 -->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-5">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/bikes/mtb/mtb7.jpg" alt="Bicicleta RAKISH SL"
+                            data-bs-toggle="modal" data-bs-target="#mtb7">
+                        <div class="card-body">
+                            <span class="badge"></span>
+                            <h4 class="card-title text-center" data-bs-toggle="modal" data-bs-target="#mtb7">
+                                Bicicleta RAKISH SL</h4>
+                            <div class="d-flex justify-content-center">
+                                <p class="prize-new">7.500.50€</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p class="prize-old"><del></del></p>
+                            </div>
+                            <a href=" #" class="btn comprar">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal para ver la bicleta 7 -->
+                <div class="modal fade" id="mtb7" tabindex="-1" role="dialog" aria-labelledby="bicicletaModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bicicletaModalLabel7">Bicicleta RAKISH SL</h5>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselMTB7" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../images/bikes/mtb/mtb7.jpg" class="d-block w-100"
+                                                alt="Bicicleta RAKISH SL">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../images/bikes/mtb/mtb7_2.jpg" class="d-block w-100"
+                                                alt="Bicicleta RAKISH SL">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../images/bikes/mtb/mtb7_3.jpg" class="d-block w-100"
+                                                alt="Bicicleta RAKISH SL">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../images/bikes/mtb/mtb7_4.jpg" class="d-block w-100"
+                                                alt="Bicicleta RAKISH SL">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../images/bikes/mtb/mtb7_5.jpg" class="d-block w-100"
+                                                alt="Bicicleta RAKISH SL">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMTB7"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMTB7"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Bicicleta 8 -->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-5">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/bikes/mtb/mtb8.jpg" alt="Bicicleta KENTA SXC"
+                            data-bs-toggle="modal" data-bs-target="#mtb8">
+                        <div class="card-body">
+                            <span class="badge"></span>
+                            <h4 class="card-title text-center" data-bs-toggle="modal" data-bs-target="#mtb8">
+                                Bicicleta KENTA SXC</h4>
+                            <div class="d-flex justify-content-center">
+                                <p class="prize-new">5.499,99 €</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p class="prize-old"><del></del></p>
+                            </div>
+                            <a href=" #" class="btn comprar">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal para ver la bicleta 8 -->
+                <div class="modal fade" id="mtb8" tabindex="-1" role="dialog" aria-labelledby="bicicletaModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bicicletaModalLabel8">Bicicleta KENTA SXC</h5>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselMTB8" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../images/bikes/mtb/mtb8_2.jpg" class="d-block w-100"
+                                                alt="Bicicleta KENTA SXC">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../images/bikes/mtb/mtb8_3.jpg" class="d-block w-100"
+                                                alt="Bicicleta KENTA SXC">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../images/bikes/mtb/mtb8_4.jpg" class="d-block w-100"
+                                                alt="Bicicleta KENTA SXC">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../images/bikes/mtb/mtb8_5.jpg" class="d-block w-100"
+                                                alt="Bicicleta KENTA SXC">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMTB8"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMTB8"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Bicicleta 9 -->
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-5">
+                    <div class="card">
+                        <img class="card-img-top" src="../images/bikes/mtb/mtb9.jpg" alt="Bicicleta MMR WOKI"
+                            data-bs-toggle="modal" data-bs-target="#mtb9">
+                        <div class="card-body">
+                            <span class="badge"></span>
+                            <h4 class="card-title text-center" data-bs-toggle="modal" data-bs-target="#mtb9">
+                                Bicicleta MMR WOKI</h4>
+                            <div class="d-flex justify-content-center">
+                                <p class="prize-new">1.175,00€</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p class="prize-old"><del></del></p>
+                            </div>
+                            <a href=" #" class="btn comprar">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal para ver la bicleta 9 -->
+                <div class="modal fade" id="mtb9" tabindex="-1" role="dialog" aria-labelledby="bicicletaModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bicicletaModalLabel9"> Bicicleta MMR WOKI</h5>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselMTB9" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../images/bikes/mtb/mtb9_2.jpg" class="d-block w-100"
+                                                alt=" Bicicleta MMR WOKI">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../images/bikes/mtb/mtb9_3.jpg" class="d-block w-100"
+                                                alt=" Bicicleta MMR WOKI">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../images/bikes/mtb/mtb9_4.jpg" class="d-block w-100"
+                                                alt=" Bicicleta MMR WOKI">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../images/bikes/mtb/mtb9_5.jpg" class="d-block w-100"
+                                                alt=" Bicicleta MMR WOKI">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMTB9"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMTB9"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <a href="#" class="scroll-up-btn">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="container pt-4 pb-4">
+                <div class="row">
+                    <div class="col-md-8 pt-4 pb-4">
+                        <div class="d-flex">
+                            <i class="fa-sharp fa-solid fa-phone"></i>
+                            <p class="m-0" id="phone">&nbsp;&nbsp;670279054</p>
+                        </div>
+
+                        <div class="d-flex">
+                            <a class="mail" href="mailto:marcos.alloza4@gmail.com">
+                                <i class="fa-solid fa-envelope"></i>
+                                &nbsp;&nbsp;marcos.alloza4@gmail.com</a>
+                        </div>
+
+                        <div class="d-flex">
+                            <i class="fa-solid fa-map-marker-alt"></i>
+                            <p id="ubicacion">&nbsp;&nbsp;&nbsp;Madrid</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pt-3 pb-3">
+                        <p id="newsletter">NEWSLETTER</p>
+                        <div class="d-flex">
+                            <br><br>
+                            <form action="">
+                                <div class="d-flex justify-content-between">
+                                    <input type="email" class="form-control form-control-sm" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Introduce tu email">
+                                    <button type="submit" class="btn btn-sm" id="boton">Suscribirse</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <hr class="linea my-3">
+
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center media">
+                            <a href="https://www.youtube.com/4llbikes/" class="boton_youtube" target="_blank"
+                                aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/4llbikes/" class="boton_facebook" target="_blank"
+                                aria-label="facebook"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/4llbikes/" class="boton_instagram" target="_blank"
+                                aria-label="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/4llbikes" class="boton_twitter" target="_blank"
+                                aria-label="twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+
+                    <hr class="linea my-4 ">
+                    <div class="col-12">
+                        <p class="text-center m-0 copy">© 2023 4LL BIKES. Todos los derechos
+                            reservados.</p>
+                        <p class="text-center copy">Desarrollado por <a class="linkdin"
+                                href="https://www.linkedin.com/in/marcos-alloza-4b47801a7/" target="_blank">Marcos
+                                Alloza García</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.querySelector(".scroll-up-btn").style.display = "block";
+            } else {
+                document.querySelector(".scroll-up-btn").style.display = "none";
+            }
+        }
+
+        document.querySelector(".scroll-up-btn").addEventListener("click", function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+
+        const buttons = document.querySelectorAll('.comprar');
+        const carrito = document.querySelector('#carrito');
+        const carrito2 = document.querySelector('#carrito2')
+        let count = 0;
+
+        buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                count++;
+                carrito.innerHTML = count;
+                carrito2.innerHTML = count;
+            });
+        });
+    </script>
+
+</body>
+
+</html>
